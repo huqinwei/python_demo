@@ -1,0 +1,32 @@
+class people:
+    name =''
+    age = 0
+    counter = 0
+    just_define = 0
+    __weight = 0
+
+    def __init__(self,n,a,w):
+        self.name = n
+        self.age = a
+        self.__weight = w
+        self.counter += 1
+        people.counter += 2
+    def speak(self):
+        print("%s say: i\'m %d"%(self.name,self.age))
+
+
+p = people('hu',10,30)
+print('class:',people.counter)
+print('self:',p.counter)
+
+p2 = people('qin',5,6)
+print('class:',people.counter)
+print('self:',p.counter)
+
+p.speak()
+p2.speak()
+print('direct access:',p.name)
+#print('direct access:',p.__weight)
+#print('people direct access:',people.__weight)
+print('direct access:',people.just_define)
+print('direct access:',p.just_define)
