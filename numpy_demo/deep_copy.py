@@ -2,7 +2,7 @@ import numpy as np
 import copy
 
 a = np.arange(12).reshape(3,4)
-print(a)
+print("a:",a)
 b = a
 c = a
 d = b
@@ -18,13 +18,15 @@ a[2,:] = 7
 #a[2,:] = 7,6,5 not allowed
 a[2,:] = 7,6,5,4
 a[0][2] = 99
-print(b)
-print(c)
-print(d)
+print('change a')
+print("a:\n",a)
+print('shallow copy--b:\n',b)
+print('shallow copy--c:\n',c)
+print('shallow shallow copy--d:\n',d)
 
 
 
-print(e)
-print(f)
+print("deep copy--e:\n",e)
+print("another deep copy--f:\n",f)
 
 

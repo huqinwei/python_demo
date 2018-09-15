@@ -23,17 +23,22 @@ print('A[0:]',A[0:])
 print('A[0,1:2] ',A[0,1:2])
 print('A[0:,1:2] ',A[0:,1:2])
 
+
+print('===================================================')
+print('A:\n',A)
+print('===================================================')
+
 for row in A:
-	print('row ',row)
+	print('row iteration:',row)
 for column in A:		#just a name,not real column
-	print(column)
+	print('fake column iteration:',column)
 for real_column in A.T:
-	print('column ',real_column)
-print(A.flatten())
-print(A.flat)
-print(type(A.flat))
+	print('column iteration:',real_column)
+print('flatten:',A.flatten())
+print('a.flat:',A.flat)
+print('type of flat:',type(A.flat))
 for item in A.flat:
-	print('item:',item)
+	print('flat iteration:',item)
 
 
 
