@@ -25,4 +25,6 @@ x7 = x2[2:100,2:100]
 print("x7:",x7)
 print("shape:",x7.shape)
 
+#print(x2[100,100])this is really IndexError
+
 
