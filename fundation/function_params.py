@@ -5,7 +5,6 @@ def greet2(a = "a",who="Moon"):
 
 greet()
 greet(who = "Daleo")
-
 greet("world")
 
 

@@ -3,7 +3,7 @@ x = np.arange(12)
 print(x)
 
 x2 = np.reshape(x,(3,4))
-print(x2)
+print('x2:\n',x2)
 
 x3 = np.roll(x2,1)
 print("np.roll(x2,1)")

@@ -57,32 +57,32 @@ print(id(a))
 print('finally:',a)
 '''
 #demo5
-#assign before global declare
-'''
-a = 6
-print('id:',id(a))
-def f():
-    a = 3
-    print('in function f() ',a)
-    print('id:',id(a))
-    global a
-    a = 5#another a
-    print(a)
-    print('id:',id(a))#another a
-f()
-print('after f():',a)
-print(id(a))
+#in local scope:assign before global declare
 
-'''
-#demo5.2
-a = 6
-print('value is ',a, ' id is ',id(a))
-a = 5
-print('value is ',a, ' id is ',id(a))
-a = 4
-print('value is ',a, ' id is ',id(a))
-a += 3
-print('value is ',a, ' id is ',id(a))
+# a = 6
+# print('id:',id(a))
+# def f():
+#     a = 3
+#     print('in function f() ',a)
+#     print('id:',id(a))
+#     global a
+#     a = 5#another a
+#     print(a)
+#     print('id:',id(a))#another a
+# f()
+# print('after f():',a)
+# print(id(a))
+
+
+#demo5.2:test id
+# a = 6
+# print('value is ',a, ' id is ',id(a))
+# a = 5
+# print('value is ',a, ' id is ',id(a))
+# a = 4
+# print('value is ',a, ' id is ',id(a))
+# a += 3
+# print('value is ',a, ' id is ',id(a))
 
 
 

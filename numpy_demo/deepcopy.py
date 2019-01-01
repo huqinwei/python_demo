@@ -17,14 +17,17 @@ a[2][0] = 300
 
 
 print('a:',a)
-print('b:',b)
-print('c:',c)
-print('d:',d)
+print('b(assign):',b)
+print('c(copy:different memory,same value, pointer the same):',c)
+print('d(deepcopy):',d)
 
 a2 = [1,2,[3,[4,5]]]
 e = copy.deepcopy(a2)
+print('a2:\n',a2)
+print('change a2')
 a2[2][1][0] = 400
-print(a2)
-print(e)
+print('a2:\n',a2)
+#print('a2 dim:\n',a2.shape)
+print('e:',e)
 
 

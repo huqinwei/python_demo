@@ -10,23 +10,20 @@ for i in r:
 
 def double_odds(nums):
     for i, num in enumerate(nums):
+        print('enumerate returns a tuple of (index,value) i:',i,' num:',num)
         if num % 2 == 1:
             nums[i] = num * 2
 
-x = list(range(10))
+x = list([6,45,1213,1232,1231,23,123,22])
+print('x:',x)
 double_odds(x)
-print(x)
-
-
-
-
 
 
 l = list(enumerate(['a', 'b']))
-print(l)
+print('list of enumerate:',l)
 
 l2 = list(['a', 'b'])
-print(l2)
+print('list:',l2)
 
 
 
